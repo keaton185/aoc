@@ -17,8 +17,8 @@ def build_grid(input: str) -> list[list[str]]:
     rows = input.strip().splitlines()
     return [list(row) for row in rows]
 
-def is_within_bounds(array: list[list[str]], i: int, j: int) -> bool:
-    return i >= 0 and i < len(array) and j >= 0 and j < len(array[0])
+def is_within_bounds(grid: list[list[str]], i: int, j: int) -> bool:
+    return i >= 0 and i < len(grid) and j >= 0 and j < len(grid[0])
 
 def count_word(grid: list[list[str]], word: str) -> int:
     word_length = len(word)
